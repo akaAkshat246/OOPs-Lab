@@ -1,0 +1,21 @@
+#include <bits/stdc++.h>
+using namespace std;
+class number {
+    int x;
+public:
+    number(int a) {
+        x = a;
+    }
+    void operator-() {
+        x = -x;
+    }
+    void display() {
+        cout << x;
+    }
+};
+int main() {
+    number n(10);
+    -n;        
+    n.display(); 
+    return 0;
+}
